@@ -9,9 +9,13 @@ import {
 import { StorageService } from './storage.service';
 
 import { STORAGE_MODULE_OPTIONS } from './storage.constants';
-import { StorageModuleOptions, StorageOptionsFactory } from './interfaces';
+import {
+  StorageModuleOptions,
+  StorageOptionsFactory,
+  StorageModuleAsyncOptions,
+} from './interfaces';
 import { ModuleRef } from '@nestjs/core';
-import { StorageModuleAsyncOptions } from './interfaces/storage-module-async-options';
+
 @Global()
 @Module({})
 export class StorageCoreModule {

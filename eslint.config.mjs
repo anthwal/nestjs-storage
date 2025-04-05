@@ -10,7 +10,7 @@ export default defineConfig([
   },
   {
     files: ['**/*.{js,mjs,cjs,ts}'],
-    languageOptions: { globals: globals.node },
+    languageOptions: { globals: { ...globals.node, ...globals.browser } },
   },
   {
     files: ['**/*.{js,mjs,cjs,ts}'],

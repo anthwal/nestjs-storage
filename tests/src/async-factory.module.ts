@@ -5,7 +5,7 @@ import { DriverType, StorageModule } from '../../lib';
   imports: [
     StorageModule.forRootAsync({
       useFactory: () => ({
-        default: DriverType.LOCAL,
+        default: 'local',
         disks: {
           local: {
             driver: DriverType.LOCAL,

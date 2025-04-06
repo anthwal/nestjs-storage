@@ -8,9 +8,11 @@ import {
   DiskType,
 } from '../types';
 
+export type DiskConfig = Record<string, DiskType>;
+
 export interface StorageModuleOptions extends StorageManagerConfig {
-  default: string;
-  disks: { [K in DriverType]?: DiskType };
+  default: keyof DiskConfig;
+  disks: DiskConfig;
 }
 
 export interface StorageDiskConfig {

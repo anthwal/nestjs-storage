@@ -1,4 +1,4 @@
-import { StorageManagerConfig } from '@slynova/flydrive';
+import { StorageManagerConfig } from '@anthwal/flydrive';
 import {
   DiskConfigType,
   DiskGCSConfigType,

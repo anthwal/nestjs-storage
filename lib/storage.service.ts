@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { Storage, StorageManager } from '@slynova/flydrive';
+import { Storage, StorageManager } from '@anthwal/flydrive';
 
 import { STORAGE_MODULE_OPTIONS } from './storage.constants';
 import { StorageModuleOptions } from './interfaces';

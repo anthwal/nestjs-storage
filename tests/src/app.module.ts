@@ -8,7 +8,7 @@ export class AppModule {
       module: AppModule,
       imports: [
         StorageModule.forRoot({
-          default: 'local',
+          default: DriverType.LOCAL,
           disks: {
             local: {
               driver: DriverType.LOCAL,

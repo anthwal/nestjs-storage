@@ -10,7 +10,7 @@ import {
 
 export interface StorageModuleOptions extends StorageManagerConfig {
   default: string;
-  disks: Record<string, DiskType>;
+  disks: { [K in DriverType]?: DiskType };
 }
 
 export interface StorageDiskConfig {
